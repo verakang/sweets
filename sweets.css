@@ -1,0 +1,326 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+/** {
+	border: 1px solid #333;
+}*/
+
+html,body,div,h1 {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Noto Sans TC",sans-serif;
+}
+
+body {
+	width: 100%;
+}
+
+.wrap {
+	max-width: 1024px;
+	box-shadow: 0px 0px 25px #aaa;
+	margin: 0px auto;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝topbar＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+.header .topbar {
+	width: 100%;
+	height: 80px;
+	background-color: #63CADD;
+	position: relative;
+}
+
+.header .topbar img {
+	width: 150px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.header .topbar ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0px;
+	margin: 0px; 
+	position: absolute;
+	top: 40px;
+	right: 30px;
+}
+
+.header .topbar ul li {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.header .topbar ul li a {
+	background-color: #FAB637;
+	box-shadow: 0px 0px 1px #666;
+	color: #333;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-shadow: 0px 0px 1px #fff;
+	transition: 0.5s;
+}
+
+.header .topbar ul li a:hover{
+	background-color: #F0852A;
+	color: #333;
+	padding: 5px 20px;	
+}
+
+.header .topbar ul li .active {
+	background-color: #F0852A;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝topbar＝＝＝＝＝＝＝＝＝＝＝＝END＝＝＝＝*/
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝banner＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+.banner {
+	position: relative;
+}
+
+.banner_index {
+	height: 250px;
+	margin: 0px auto;
+	background-image: url(img/cover.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner_course {
+	height: 250px;
+	margin: 0px auto;
+	background-image: url(img/coures.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner_qna {
+	height: 250px;
+	margin: 0px auto;
+	background-image: url(img/q&a.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.title {
+	font-family: "Indie Flower";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 52px;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	color: #fff;
+	text-shadow: 2px 2px 2px #F0852A;
+	font-weight: 500;
+}
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝banner＝＝＝＝＝＝＝＝＝＝＝END＝＝＝*/
+
+.section {
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.content {
+	background-color: #eee;
+	text-align: center;
+}
+
+.content h1 {
+	color: #F0852A;
+	font-size: 28px;
+	text-align: left;
+	padding: 10px;
+	padding-top: 30px;
+	padding-left: 40px;
+	font-weight: 300;
+}
+
+.content a {
+	color: #F0852A;
+	font-size: 20px;
+	text-decoration: none;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	font-weight: 300;
+}
+
+.content a:hover {
+	color: #FAB637;
+}
+
+
+.content .course_box .box {
+	box-sizing: border-box;
+	margin: 5px;
+	width: 30%;
+	height: auto;
+	display: inline-block;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+	position: relative;
+}
+
+
+.content .course_box .box img {
+	width: 100%;
+	margin-bottom: -5px;
+}
+
+@media screen and (max-width: 706px) {
+	.content .course_box .box {
+	box-sizing: border-box;
+	margin: 5px;
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow: hidden;
+	}
+	.content .course_box .box img {
+	width: 90%;
+	}
+
+}
+
+.course_title {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(100,208,227,0.5);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.course_title h3{
+	margin: 0px;
+	font-size: 20px;
+	width: 100%;
+	font-weight: 200;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.course_title:hover {
+	opacity: 1;
+}
+
+table {
+	margin: 0px auto;
+	width: 90%;
+	color: #333;
+	font-size: 18px;
+	text-align: left;
+	font-weight: 300;
+	line-height: 1.8;
+	border-spacing: 0px;
+	border-collapse:collapse;
+}
+
+table th {
+	background-color: #FAB637;
+	font-weight: 300;
+}
+
+table th,table td {
+	border: 2px solid #fff;	
+	padding-left: 15px;
+}
+
+.info ol {
+	padding: 20px 80px;
+	margin: 0px;
+}
+
+.info ol li {
+	text-align: left;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: 300;
+}
+
+.teacher h2 {
+	color: #64D0E3;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: left;
+	padding-left: 70px;
+	text-shadow: 1px 1px 0px #333;
+}
+
+.teacher p {
+	font-size: 18px;
+	font-weight: 300;
+	padding: 0px 70px;
+	text-align: left;
+}
+
+.qna ol {
+	padding: 20px 80px;
+	margin: 0px;
+	list-style: none;
+}
+
+.qna ol li {
+	text-align: left;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: 300;
+}
+
+.outer {
+	background-color: rgba(100,208,227,0.2);
+	padding: 70px 0px;
+}
+
+.outer h2 {
+	margin: 0px;
+	padding-bottom: 5px;
+	font-weight: 300;
+}
+
+.outer input {
+	width: 350px;
+	font-size: 18px;
+}
+
+.outer button {
+	background-color: #FAB637;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.outer button:hover {
+	background-color: #F0852A;
+}
+
+.outer a {
+	color: #F0852A;
+	text-decoration: none;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	font-weight: 300;
+}
+
+
+.footer {
+	height: 60px;
+	background-color: #64D0E3;
+	text-align: center;
+}
+
+.footer img {
+	width: 100px;
+	padding-top: 10px;
+}
+
